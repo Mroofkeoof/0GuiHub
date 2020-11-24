@@ -1,0 +1,325 @@
+-------------------| CREATED BY Gui lol#4481 |-------------------
+
+local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
+
+local UI = Material.Load({
+     Title = "0Gui Hub v0.2.5",
+     Style = 3,
+     SizeX = 600,
+     SizeY = 500,
+     Theme = "Dark"
+})
+----- Pages
+local A = UI.New({
+    Title = "Universal"
+})
+
+local B = UI.New({
+    Title = "FE Script"
+})
+
+local C = UI.New({
+    Title = "Admin Script"
+})
+
+local D = UI.New({
+    Title = "FE Hub"
+})
+
+local Z = UI.New({
+    Title = "Credits"
+})
+----- Universal buttons
+A.Button({
+    Text = "Rejoin",
+    Callback = function()
+       game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId, LocalPlayer)
+    end,
+    Menu = {
+       Information = function(self)
+            UI.Banner({
+                Text = "It rejoin you to same server, you don't have to inject executor again"            
+            })
+        end
+    }
+})
+
+A.Button({
+    Text = "Bypass Chat",
+    Callback = function()
+       loadstring(game:HttpGet("https://cdn.soldexe.tk/k8dT1Rm5.txt", true))();
+    end,
+    Menu = {
+       Information = function(self)
+            UI.Banner({
+                Text = "It bypass chat for you to swear or anything (by Proton??)"            
+            })
+        end
+    }
+})
+
+A.Button({
+    Text = "Respawn",
+    Callback = function()
+       game.Players.LocalPlayer.Character.Humanoid.Health = 0
+    end,
+    Menu = {
+       Information = function(self)
+            UI.Banner({
+                Text = "It respawns you, if it doesn't work. Please rejoin (Respawn doesn't work on God Mode)"            
+            })
+        end
+    }
+})
+
+A.Button({
+    Text = "Invisible Fling",
+    Callback = function()
+       loadstring(game:HttpGet("https://paste.ee/p/qmW56"))()
+    end,
+    Menu = {
+       Information = function(self)
+            UI.Banner({
+                Text = "This makes you invisible and fly, you can go to people and fling"            
+            })
+        end
+    }
+})
+
+A.Slider({
+    Text = "Player speed",
+    Callback = function(Value)
+       game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+    end,
+    Min = 16,
+    Max = 250,
+    Def = 16
+})
+
+----- Fe Script buttons
+B.Button({
+    Text = "(Nullware) Xester",
+    Callback = function()
+       loadstring(game:HttpGet("https://paste.ee/r/20GO5/0"))()
+    end,
+    Menu = {
+       Information = function(self)
+            UI.Banner({
+                Text = "Xester animation converted to Fe (require nullware reanimate)"
+            })
+        end
+    }
+})
+
+B.Button({
+    Text = "(No Godmode) Chips",
+    Callback = function()
+       loadstring(game:HttpGet("https://paste.ee/r/ojAuW/0"))()
+    end,
+    Menu = {
+       Information = function(self)
+            UI.Banner({
+                Text = "Chips, no need to reanimate or anything (R6 only and no need god mode)"
+            })
+        end
+    }
+})
+
+B.Button({
+    Text = "(Nullware) Gale fighter",
+    Callback = function()
+       loadstring(game:HttpGet("https://paste.ee/r/MtAYl/0"))()
+    end,
+    Menu = {
+       Information = function(self)
+            UI.Banner({
+                Text = "Gale fighter animation converted to Fe (require nullware reanimate)"
+            })
+        end
+    }
+})
+
+B.Button({
+    Text = "Zen",
+    Callback = function()
+       loadstring(game:HttpGet("https://paste.ee/r/yc0PH/0"))()
+    end,
+    Menu = {
+       Information = function(self)
+            UI.Banner({
+                Text = "A non hats fe animation that can fling players"
+            })
+        end
+    }
+})
+
+B.Button({
+    Text = "Sword Hammer",
+    Callback = function()
+       loadstring(game:HttpGet("https://paste.ee/r/phAKz/0"))()
+    end,
+    Menu = {
+       Information = function(self)
+            UI.Banner({
+                Text = "Greatsword that can fling people, good animation (require any Greatsword)"
+            })
+        end
+    }
+})
+
+B.Button({
+    Text = "(Nullware) Minigun",
+    Callback = function()
+       loadstring(game:HttpGet("https://paste.ee/r/2uBp2/0"))()
+    end,
+    Menu = {
+       Information = function(self)
+            UI.Banner({
+                Text = "Minigun converted to FE that can fling people (require Type 40 Juggernauts Chain Gun and Nullware reanimate)"
+            })
+        end
+    }
+})
+
+B.Button({
+    Text = "(Nullware) Carnage",
+    Callback = function()
+       loadstring(game:HttpGet("https://paste.ee/r/sWtya/0"))()
+    end,
+    Menu = {
+       Information = function(self)
+            UI.Banner({
+                Text = "Cyberpunk Sniper converted to FE fling weapon (require nullware and cyberpunk sniper)"
+            })
+        end
+    }
+})
+
+B.Button({
+    Text = "(Bug/Old) Sonic",
+    Callback = function()
+       loadstring(game:HttpGet("https://paste.ee/r/cGmVa/0"))()
+    end,
+    Menu = {
+       Information = function(self)
+            UI.Banner({
+                Text = "Old sonic script that got leaked and it's buggy (require anti limb script if you don't want your parts fall)"
+            })
+        end
+    }
+})
+
+----- Admins buttons
+C.Button({
+    Text = "IceGear admin",
+    Callback = function()
+       loadstring(game:HttpGet("https://paste.ee/r/ZNLoo/0"))()
+    end,
+    Menu = {
+       Information = function(self)
+            UI.Banner({
+                Text = "A Leaked admin script with claim and grabknife command (require net)"
+            })
+        end
+    }
+})
+
+C.Button({
+    Text = "Infinite Yield",
+    Callback = function()
+       loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    end,
+    Menu = {
+       Information = function(self)
+            UI.Banner({
+                Text = "The best FE admin for troll and more"
+            })
+        end
+    }
+})
+
+C.Button({
+    Text = "Cmd-X",
+    Callback = function()
+       loadstring(game:HttpGet('https://raw.githubusercontent.com/CMD-X/CMD-X/master/CMD-X'))()
+    end,
+    Menu = {
+       Information = function(self)
+            UI.Banner({
+                Text = "Kinda good FE admin by fini#0001 and pigeon#5462"
+            })
+        end
+    }
+})
+
+----- Fe Hub buttons
+D.Button({
+    Text = "Nullware Rewritten",
+    Callback = function()
+       loadstring(game:HttpGet("https://paste.ee/r/lGZMc/0"))()
+    end,
+    Menu = {
+       Information = function(self)
+            UI.Banner({
+                Text = "Free FE Hub with great animations created and converted by iiWhxted (require Synapse X or KRNL)"
+            })
+        end
+    }
+})
+
+D.Button({
+    Text = "(No Key) Vibe Hub",
+    Callback = function()
+       loadstring(game:HttpGet("https://paste.ee/r/IoHrE/0"))()
+    end,
+    Menu = {
+       Information = function(self)
+            UI.Banner({
+                Text = "Vibe Hub with cool animations, bypassed key system thanks to OfcJustMe (ROBLOX)"
+            })
+        end
+    }
+})
+
+----- Credits buttons
+Z.Button({
+    Text = "Created by Gui lol#4481"
+})
+
+Z.Button({
+    Text = "UI Library by Kinlei"
+})
+
+Z.Button({
+    Text = "Join discord server: discord.gg/DM6TVjg7Z8"
+})
+
+local guiService = game:GetService("StarterGui")
+local exploit = (syn_secure_call and "Synapse X") or (PROTOSMASHER_LOADED and "ProtoSmasher") or (SENTINEL_LOADED and "Sentinel") or (fireclient and "Calamari") or (is_sirhurt_closure and "SirHurt") or (KRNL_LOADED and "KRNL") or (shadow_env and "Shadow") or (IS_VIVA_LOADED and "VIVA") or (isvm and "Proxo") or (IS_COCO_LOADED and "COCO") or (unit and "UNIT.FUN")-- or (jit and "EasyExploits")
+
+wait()
+
+guiService:SetCore("SendNotification", {
+
+Title = "Checking exploit!";
+Text = "We are checking what exploit are you using";
+Duration = 6;
+})
+
+wait(6)
+
+guiService:SetCore("SendNotification", {
+
+Title = "Almost done!";
+Text = "If it doesn't tell you what exploit you using, you are using unknown function";
+Duration = 6;
+})
+
+wait(5)
+
+guiService:SetCore("SendNotification", {
+
+Title = "Exploit detected!";
+Text = "You are using ".. exploit;
+Duration = 5;
+})
